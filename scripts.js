@@ -4,6 +4,10 @@ const hasSolvedPassword = window.localStorage.getItem('hasSolvedPassword') === '
 if (hasSolvedPassword) {
   document.getElementById('password-section').style.display = 'none'
   document.getElementById('gift-section').style.display = 'block'
+
+  window.setTimeout(() => {
+    window.scrollTo(0, 0)
+  }, 100);
 }
 
 const form = document.getElementById('password-form')
