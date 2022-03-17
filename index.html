@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Stina och Emil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body, h1 {
+      font-family: "Raleway", sans-serif;
+      overflow-wrap: break-word;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+
+    .bgimg {
+      background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .bgimg-gift {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    #password-section {
+      visibility: visible;
+      width: 100%;
+    }
+
+    .password-section-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    #password-form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .password-header {
+      text-align: center;
+    }
+
+    #password-input {
+      outline: none;
+      border: none;
+      font-size: 36px;
+      border-radius: 8px;
+      max-width: 75%;
+      background-color: #ffffff;
+    }
+
+    #gift-section {
+      display: none;
+    }
+
+    .gift-card-content.gift-card-content.gift-card-content.gift-card-content {
+      min-height: 100vh;
+      background-color: #f7f5f2!important;
+      filter: none;
+      padding-bottom: 64px;
+    }
+
+    .w3-top {
+      position: absolute;
+    }
+
+    #back-button {
+      padding-top: 24px;
+      padding-left: 8px;
+      display: flex;
+      align-items: center;
+      font-size: 11px;
+    }
+
+    .weekend-header {
+      font-size: 24px;
+    }
+
+    .img-boarder {
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white password-section" id="password-section">
+  <div class="w3-display-middle password-section-content">
+    <h1 class="w3-jumbo w3-animate-top password-header">Grattis från Anna-Karin och Kristoffer!</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center break-word">Kan ni knäcka lösenordet för att öppna presenten?</p>
+    <form id="password-form">
+      <input type="password" id="password-input">
+
+    </form>
+  </div>
+</div>
+<div id="gift-section">
+  <div class="w3-top">
+    <div id="back-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-left"
+           viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+      </svg>
+      <span>&nbsp;&nbsp;Tillbaka</span>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <!--  <header class="bgimg-gift w3-display-container w3-grayscale-min">-->
+  <!--    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">-->
+  <!--      <span class="w3-tag">Open from 6am to 5pm</span>-->
+  <!--    </div>-->
+  <!--    <div class="w3-display-middle w3-center">-->
+  <!--      <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>-->
+  <!--    </div>-->
+  <!--    <div class="w3-display-bottomright w3-center w3-padding-large">-->
+  <!--      <span class="w3-text-white">15 Adr street, 5015</span>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale w3-large gift-card-content">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64 weekend-header"><span
+            class="w3-tag w3-wide">Välkomna på Gotlandsweekend – hösten 2022!</span></h5>
+        <p><b>Casa de Sigfride – all inclusive</b></p>
+        <p>Ett lantligt boende på södra Gotland med naturen utanför dörren och närhet till havet. I det här boendet
+          ingår sovplatser, frukost, mat, dryck och sällskap (obligatoriskt). Såklart ingår även mängder av
+          fikapauser.</p>
+        <img src="/img/sigfride.jpg" style="width:100%;max-width:1000px;" class="w3-margin-top img-boarder">
+        <p>Det här erbjudandet består även av en Tryffelsafari med tryffelhunden Ludde, samt ett litet resebidrag till
+          gotlandsfärjan.</p>
+        <p>Erbjudandet gäller valfri helg hösten 2022. Valet av helg görs i samråd med era värdar.</p>
+
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <p><i>SÄTT IN PRESENTKORTSKOD HÅR</i></p>
+          <p>Hehehe</p>
+        </div>
+        <img src="/img/tryffel.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+        <div>
+          <img src="/img/collage.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+          <img src="/img/kristoffer-ludde.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+          <img src="/img/boat.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+<script src="scripts.js" type="text/javascript"></script>
+</html>
