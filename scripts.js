@@ -1,4 +1,4 @@
-const THE_PASSWORD = 'pass'
+const THE_PASSWORD = 'väl inslaget';
 
 const hasSolvedPassword = window.localStorage.getItem('hasSolvedPassword') === 'true'
 if (hasSolvedPassword) {
@@ -12,7 +12,7 @@ if (form) {
     const password = document.getElementById("password-input").value;
     event.preventDefault();
 
-    if (password === THE_PASSWORD) {
+    if (password.toLowerCase() === THE_PASSWORD.toLowerCase()) {
       window.localStorage.setItem('hasSolvedPassword', true);
       location.reload();
     }
