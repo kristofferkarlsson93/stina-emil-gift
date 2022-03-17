@@ -15,6 +15,11 @@ if (form) {
     if (password.toLowerCase() === THE_PASSWORD.toLowerCase()) {
       window.localStorage.setItem('hasSolvedPassword', true);
       location.reload();
+    } else {
+      document.getElementById('error-box').style.visibility = 'visible'
+      window.setTimeout(() => {
+        document.getElementById('error-box').style.visibility = 'hidden'
+      }, 3000)
     }
   });
 }

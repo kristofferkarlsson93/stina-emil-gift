@@ -56,6 +56,15 @@
       background-color: #ffffff;
     }
 
+    #error-box {
+      background-color: #ebc063e3;
+      border-color: #e8b64c;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 16px 8px 16px;
+      visibility: hidden;
+    }
+
     #gift-section {
       display: none;
     }
@@ -103,7 +112,10 @@
     <p class="w3-large w3-center break-word">Kan ni knäcka lösenordet för att öppna presenten?</p>
     <form id="password-form">
       <input type="password" id="password-input">
-
+      <br/>
+      <div id="error-box">
+        <p>Tyvärr, det var fel. Försök igen :)</p>
+      </div>
     </form>
   </div>
 </div>
